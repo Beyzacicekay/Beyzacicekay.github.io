@@ -1,0 +1,37 @@
+<html>
+    <head>
+
+       Sayı:
+        <input type="text" id="ornekGiris" value=" "/>
+        <br/>
+        <input type="button" value="Push" onClick="diziyeEkle()" />
+        <input type="button" value="Pop" onClick="dizidensil()" />
+        <p id="ornekSonuc">
+        </p>
+        <p id="ornekSonuc1">
+        </p>
+        
+        <script type="text/javascript">
+        
+        var ornekDizi = new Array();
+        
+        function diziyeEkle()
+        {
+            var deger = document.getElementById("ornekGiris").value;
+            ornekDizi.push(deger);
+            
+            document.getElementById("ornekSonuc").innerHTML = ornekDizi.join("    ");
+        }
+        function dizidensil()
+        {
+            var deger = document.getElementById("ornekGiris").value;
+            ornekDizi.pop(deger);
+            
+            document.getElementById("ornekSonuc1").innerHTML = ornekDizi.join("    ");
+        }
+        
+        </script>
+        
+    </head>
+
+</html>
