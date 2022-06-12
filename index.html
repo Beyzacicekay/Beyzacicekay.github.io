@@ -1,164 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"
-        <meta name="viewport" content="width=device-width,initial-scale=1.0" >
-        <title>WEBSİTEM</title>
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <link rel="stylesheet" href="style.css">
-        
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="html2pdf.bundle.min.js"> </script>
+  <script src="script.js"></script>
+  <script> src="http://cdnjs.couldflare.com/ajax/libs/jspdf/1.3.3/jspdf.debug.js"</script>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>B</span>Ç</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Anasayfa</a></li>
+            <li><a href="#services" data-after="Service">Yeterliliklerim</a></li>
+            <li><a href="#projects" data-after="Projects">Projeler</a></li>
+            <li><a href="#about" data-after="About">Hakkımda</a></li>
+            <li><a href="#contact" data-after="Contact">İletişim</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
 
 
-    </head>
-    <body>
-        
-        <!--headerin başlangıcı-->
-        <header id="header">
-            <div class="header">
-                <div class="container">
-                    <div class="header-navbar">
-                        <div class="header-logo">
-                            <h2>YAZILIM</h2>
-                        </div>
-                        <div class="header-menu">
-                            <ul id="menuItems">
-                                <li> <a href="#">ANASAYFA</a></li>
-                                <li> <a href="#">Hakkımda</a></li>
-                                <li> <a href="#">İletişim</a></li>
-
-                            </ul>
-                           
-                        </div>
-                    </div>
-                    <div class="header-text">
-                        <h1><span class="first-letter">M</span>ERHABA</h1>
-                        <h3>Yazılım dünyasında harika bir yolculuk </h3>
-                        <a href="#" class="btn-software">Başlayalım</a>
-                    </div>
-                </div>
+  <!-- anasayfa başlangıç  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Merhaba <span></span></h1>
+        <h1> Ben Yazılım Mühendisi <span></span></h1>
+        <h1>Beyza Nur Çiçekay <span></span></h1>
+        <a href="#projects" type="button" class="cta">Portfolio</a>
+      </div>
+    </div>
+    
+  </section>
+ 
+  
+     
+  
+  <!-- anasayfa bitiş  -->
+    <!--slider  başlangıç   -->
+    
+    <div class="container"  >
+      
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+    
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+    
+          <div class="item active">
+            <img src="resimler\programlama-dilleri-betik-diller.jpg" alt="Los Angeles" style="width:100%;">
+            <div class="carousel-caption">
+              
             </div>
-        </header>
-        <!--hakkındanınbaşlangıcı-->
-        <section id="hakkımda">
-            <div class="hakkımda">
-                <div class="container">
-                    <div class="hakkımda-title">
-                        <h2>Hakkımda</h2>
-                    </div>
-                    <div class="hakkımda-content">
-                         <div class="hakkımda-img anime-left" >
-                            <img src="resimler/windows-QKuAz8zJRng-unsplash.jpg" alt="">
-                        </div>
-                        <div class="hakkımda-text anime-right">
-                            <h4>Benim hakkımda </h4>
-                            <div class="asteriks">
-                                <i class="fas fa-asteriks"></i>
-                            </div>
-                            <p>Merhaba adım Beyza İnönü Üniversitesi Yazılım Mühendisliği birinci sınıf öğrencisiyim <br> 20 yaşındayım yazılım geliştirme ve siber güvenlik alanına ilgiliyim <br>c,html,css,javascript üzrine çalışmalar yapıyorum <br>yazılım alanına oldukça ilgiliyim .
-                             </p>
-                        </div>
-
-                    </div>
-                </div>
+          </div>
+    
+          <div class="item">
+            <img src="resimler\web-programlama-dilleri.png" alt="Chicago" style="width:100%;">
+            <div class="carousel-caption">
+              
             </div>
-        </section>
-        <!--resim kısmı -->
+          </div>
         
-                        
-                            
+          <div class="item">
+            <img src="resimler\neden-kodlama-programlama-dili.jpg" alt="New York" style="width:100%;">
+            <div class="carousel-caption">
+              
             </div>
-        </section>
+          </div>
+      
+        </div>
+    
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+     
+    
+      
+  <!-- yeterlilik başlangıç -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title"><span>Becerilerim </span> Ve Yeter<span>lilik</span>lerim</h1>
+        <p>Aşağıda yeterli olduğum ve çalışmalarımı sürdürdüğüm diller var .Zaman geçtikçe ilerlemelerimi buraya kaydedeceğim.Güzel işler başaracağıma inanıyorum </p>
+      </div>
+      <div class="service-bottom">
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/dusk/64/undefined/c.png" /></div>
+          <h2>C </h2>
+          <p>%90 seviyesine kadar ilerleme kaydedebildim.Çalışmalarım sürüyor.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/undefined/external-java-computer-programming-flaticons-lineal-color-flat-icons.png" /></div>
+          <h2>java</h2>
+          <p>Java diline yeni başladım. Bu dilde öğreneceği daha çok şey var </p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/undefined/external-html-programming-and-coding-flatart-icons-outline-flatarticons.png" /></div>
+          <h2>HTML-CSS-JavaScript</h2>
+          <p>%70 seviyesine kadar öğrendim. Ama daha çok gelişmeliyim :)</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/color/48/undefined/bootstrap.png" /></div>
+          <h2>Boostrap-Jquery</h2>
+          <p>%70 seviyesine kadar öğrendim. Ama daha çok gelişmeliyim :)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- yeterlilik bitiş-->
+
+  <!-- Proje başlangıç -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title"> <span>PROJELERİM </span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Proje 1</h1>
+            <h2>C Dili</h2>
+            <p>Bu projemde c dili ile ilgili gerekli olan bütün kodları yazdım. Zaman ilerledikçe diğer c dili projelerimi burada paylaşacağım takipte kalın :)</p>
+            
+            <a href="Beyza Nur_ Cicekay_ Odev1.c (1).pdf" download><button type="button" class="btn btn-info" >proje 1</button></a>
+          </div>
+          <div class="project-img">
+            <img src="resimler\hakkımda.jpeg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Proje 2</h1>
+            <h2>HTML-CSS DİLİ</h2>
+            <p>HTML-CSS projemde anasayfa nasıl yapılır ne gibi özellikler içerir neler gerektirir gibi özelliklere yer verdim bi sonraki hedefim geniş kapsamlı safyalara anasayfa tasarlamak olacak takipte kalın :)</p>
+            <a href="htmlcss.pdf" download><button type="button" class="btn btn-info" >Proje 2</button></a>
+          </div>
+          <div class="project-img">
+            <img src="resimler\html-css.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Proje 3</h1>
+            <h2>JAVA DİLİ</h2>
+            <p>Java ile ilgili henüz bir proje yapmadım yapınca burada paylaşacağım takipte kalın :)</p>
+          </div>
+          <div class="project-img">
+            <img src="resimler\Java-Logo.jpg" alt="img">
+          </div>
+        </div>
        
-        <!--iletişim-->
-        <section id="iletişim ">
-            <div class="iletişim">
-                <div class="container">
-                    <div class="page-title">
-                        <h2>İletişim</h2>
-
-        </div>
-        <div class="iletişim-content">
-            <div class="iletişim-item anime-top">
-                <img src="resimler/telefon.png">
-                <p>0528 002 20 22</p>
-                <p>0212 044 65 44</p>
-            </div>
-            <div class="iletişim-content">
-                <div class="iletişim-item anime-bottom">
-                    <img src="resimler/gmail3.png">
-                    <p>cicekaybeyza@gmail.com</p>
-                    
-                </div>
-                <div class="iletişim-content">
-                    <div class="iletişim-item anime-top">
-                        <img src="resimler/adres2.png">
-                        <p>Bahçıvan mahallesi kılıçlıbaba sok safa evleri c blok no 21</p>
-                        
-                    </div>
-                    
-        </div>
-    </section>
-    <footer id="footer">
-        <div class="footer">
-            <div class="footer-content">
-                <div class="page-tittle">
-                      <h2>ALT BİLGİ</h2>
-                </div>
-                <div class="footer-copyright">
-                    <p>Ek bilgi olarak diğer iletişim bilgileri aşağıda verilmiştir oradan ulaşabilirsiniz</p>
-                    <p>-->instagram:Beyzacicekay_</p>
-                    <p>-->twitter:beyzacck07</p>
-
-                    <br>
-                </div>
-                <nav class="footer-social">
-                    <ul>
-                        <li>
-                            <a href="#"<i class="fa-brands fa-google"></i>
-                            <a href="#"<i class="fa-brands fa-facebook"></i>
-                            <a href="#"<i class="fa-brands fa-twitter"></i>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </footer>
-    <script>
-        window.sr=ScrollReveal();
-
-
-        sr.reveal('.anime-left',{
-            origin:'left',
-            duration:1000,
-            distance:'25rem',
-            delay:300
-        });
-
-        sr.reveal('.anime-right',{
-            origin:'right',
-            duration:1000,
-            distance:'25rem',
-            delay:300
-        });
-        sr.reveal('.anime-top',{
-            origin:'top',
-            duration:1000,
-            distance:'25rem',
-            delay:300
-        });
-        sr.reveal('.anime-bottom',{
-            origin:'bottom',
-            duration:1000,
-            distance:'25rem',
-            delay:300
-        })
-    </script>
-    <script>
-        ScrollReveal().reveal('.headline');
-    </script>
         
+      </div>
+    </div>
+  </section>
+  <!-- proje bitiş -->
 
-    </body>
+  <!-- hakkımda başlangıç  -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="resimler\windows-QKuAz8zJRng-unsplash.jpg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">HAKKIMDA</h1>
+        <h2>Yazılım Mühendisi</h2>
+        <p>Merhaba ben Beyza Nur Çiçekay 20 yaşındayım İnönü üniversitesi Yazılım Mühendisliği bölümünde 1. sınıf öğrencisiyim.Yazılım alanına oldukça ilgiliyim siber güvenlik ve oyun geliştiriciliği üzerinde çalışmalarımı yürütmek istiyorum. </p>
+        <figure id="cv">
+          <embed src="CV.pdf" type="">
+            <a href="CV.pdf" download><button type="button" class="btn btn-info" >CV</button></a>
+        </figure>
+        
+        <a href="#" class="cta">Anasayfaya Dön</a>
+      </div>
+    </div>
+  </section>
+  <!-- hakkımda bitiş -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title"> <span>İletişim  Bilgileri</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Telefon</h1>
+            <h2>0528 002 20 22</h2>
+            <h2>+1 234 123 1234</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>cicekaybeyza@gmail.com</h2>
+            <h2>Beyzaccky7@icould.com</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+          <div class="contact-info">
+            <h1>Adres</h1>
+            <h2>Bahçıvan mah.Kılıçlıbaba sok. Safa Evleri C blok no 21</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1>ALT BİLGİ</h1>
+      </div>
+      <h2>Sosyal Medya Hesapları aşağıda bulunmaktadır</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href=""><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+        
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+        </div>
+      
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+</body>
 
 </html>

@@ -4,15 +4,11 @@
     // Daha fazla bilgi için şu adresi ziyaret edin: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
-
-    
         {
             "type": "pwa-chrome",
             "request": "launch",
-            "name": "chr",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
+            "name": "Open index.html",
+            "file": "d:\\websayfam\\Beyzacicekay.github.io\\index.html"
         }
     ]
 }
